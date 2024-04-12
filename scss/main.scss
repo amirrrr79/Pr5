@@ -1,0 +1,520 @@
+@import 'base/base';
+@import 'config/variables';
+@import 'components/mediaqueries';
+
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgb(255, 255, 255);
+  .nav-center{
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ul-menu{
+          display: none;
+          .li-menu a:hover{
+            color:blueviolet;
+            transition: .7s;
+          }
+          @media screen  and (min-width:768px){
+            display: flex;
+            gap:1.2rem;
+
+          }
+          
+    }
+    .nav-button{
+        display: none;
+        @media screen  and (min-width:768px){
+            display: block;
+          }
+    }
+  }
+}
+
+.navbar-fix{
+    box-shadow: 0px 10px 10px  grey;
+    transition: .7s;
+}
+
+.aside{
+    padding: 1.2rem;
+    border: 1px solid rgb(194, 194, 194);
+    margin: 5.5rem 2rem 0rem 0rem;
+    border-radius: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: fixed;
+    width: 90%;
+    top:-100%;
+    background-color: rgb(255, 255, 255,.8);
+    box-shadow: 5rem green;
+    .li-menu a:hover{
+        color: blueviolet;
+        transition: .7s;
+      }
+    @media screen  and (min-width:768px){
+        display: none;
+    }
+  
+    .ul-menu{
+        padding: .2rem;
+
+        .li-menu{
+            margin-bottom: 1rem;
+        }
+    }
+}
+.show-sidebar{
+    top:0%;
+    transition: .7s;
+}
+
+.nav-header{
+    @media screen  and (min-width:768px) {
+       
+            display: none;
+        }
+}
+
+
+ .hero{
+    margin-top: 7rem;
+    
+    .image{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+    .text{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        
+        .title{
+            margin-top: 1rem;
+            margin-bottom: .8rem;
+        }
+
+        p{
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    @media screen  and (min-width:768px) {
+       
+        .hero-center{
+            margin-left: 3.5rem;
+            margin-right: 3.5rem;
+            margin-top: 9.5rem;
+            display: flex;
+            justify-content: space-around;
+            .image{
+                flex: 0 0 50%;
+            }
+            .text{
+                align-self: center;
+            }
+        }
+    }
+ }   
+
+
+ .about{
+    margin-top: 5rem;
+    .title-center{
+
+        color:blueviolet;
+        text-align: center;
+        border-bottom: 2px solid black;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom: 3rem;
+
+     }
+    .image{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .text{
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        h2{
+            margin-bottom: .8rem;
+        }
+    }
+    
+ }
+
+
+ @media screen  and (min-width:768px){
+    .about{
+         margin-top: 13rem;
+         .title-center{
+
+            margin-left: 25rem;
+            margin-right: 25rem;
+
+         }
+     
+    .about-center{
+       
+        display: flex;
+        justify-content: space-around;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        margin-top: 7rem;
+        .image{
+            flex: 0 0 50%;
+
+        }
+        .text{
+            align-self:center ;
+        }
+    }
+}
+}
+
+.Support{
+    margin-top: 5rem;
+    .title-center{
+
+        color:blueviolet;
+        text-align: center;
+        border-bottom: 2px solid black;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom: 3rem;
+
+     }
+    .image{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .text{
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        h2{
+            margin-bottom: .8rem;
+        }
+    }
+    
+ }
+
+ @media screen  and (min-width:768px){
+    .Support{
+         margin-top: 13rem;
+         .title-center{
+
+            margin-left: 25rem;
+            margin-right: 25rem;
+
+         }
+     
+    .Support-center{
+       
+        display: flex;
+        justify-content: space-around;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        margin-top: 7rem;
+        .image{
+            flex: 0 0 50%;
+
+        }
+        .text{
+            align-self:center ;
+        }
+    }
+}
+}
+
+.service{
+    margin-top: 5rem;
+    .title-center{
+
+        color:blueviolet;
+        text-align: center;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom: 3rem;
+
+     }
+
+     .card-service{
+        border: 1px solid rgb(194, 194, 194);
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 2.5rem;
+        border-radius: 2rem;
+          
+        .title-card{
+             margin-top: 2rem;
+             margin-bottom: 2rem;
+        }
+        .icon-card{
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: blueviolet;
+        }
+
+        .text-card{
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .button-card{
+             margin-bottom: 2rem;
+        }
+        
+        
+     }
+     .card-service:hover{
+        background-color: rgb(138, 43, 226,.7);
+        transition: .7s;
+  }
+  .card-service:hover .icon-card{
+    color: white;
+  }
+  .card-service:hover .text-card{
+    color: white;
+  }
+  .card-service:hover .title-card{
+    color: white;
+  }
+  .card-service:hover .button{
+    background-color: white;
+    color: blueviolet;
+  }
+}
+
+@media screen  and (min-width:768px){
+    .service{
+        margin-top: 13rem;
+        .title-center{
+
+            margin-left: 25rem;
+            margin-right: 25rem;
+
+          }
+       .service-center{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 7rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        
+          .card-service:hover{
+                background-color: rgb(138, 43, 226,.7);
+                transition: .7s;
+          }
+          .card-service:hover .icon-card{
+            color: white;
+          }
+          .card-service:hover .text-card{
+            color: white;
+          }
+          .card-service:hover .title-card{
+            color: white;
+          }
+          .card-service:hover .button{
+            background-color: white;
+            color: blueviolet;
+          }
+
+       }
+    }
+}
+
+.program{
+    margin-top: 7rem;
+  
+    .image{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .text{
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        h2{
+            margin-bottom: .8rem;
+            color: blueviolet;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+ }
+
+ @media screen  and (min-width:768px){
+    .program{
+        margin-top: 13rem;
+       .program-center{
+         display: flex;
+         justify-content: space-around;
+         margin-left: 5rem;
+         margin-right: 5rem;
+       }
+        .image{
+           flex: 0 0 50%
+        }
+        .text{
+              align-self: center;
+            
+            .buttons{
+               display: flex;
+               justify-content: center;
+               gap: 2rem;
+            }
+        }
+    }
+}
+
+
+.contact{
+    margin-top: 7rem;
+  
+    .image{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .text1{
+        
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        h2{
+            margin-bottom: .8rem;
+            color: blueviolet;
+        }
+        .buttons{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .text2{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .buttons{
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+ }
+
+ @media screen  and (min-width:768px){
+    .contact{
+        margin-top: 13rem;
+
+        .contact-center{
+            display: flex;
+            justify-content: space-around;
+
+            .text1{
+               flex: 0 0 30%;
+            }
+            .text2{
+                align-self:flex-end;
+            }
+            .buttons{
+                align-self:center;
+
+            }
+           
+        }
+      
+    }
+
+ }
+
+ .footer{
+    margin-top: 7rem;
+    text-align: center;
+    background-color: rgb(194, 139, 245);
+    .colum{
+        padding-top:2rem ;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        color: rgb(108, 108, 108);
+        ul{
+            li{
+                cursor: pointer;
+            }
+            li:hover{
+               color: white;
+            }
+        }
+
+        i{
+           font-size: 1.5rem;
+           cursor: pointer;
+        }
+        i:hover{
+            color: white;
+        }
+       
+    }
+    .text{
+        border-top: 2px solid rgb(0, 0, 0);
+        margin-right: 3rem;
+        margin-left: 3rem;
+        p{
+            margin-top: 1.2rem;
+        }
+    }
+ }
+
+ @media screen  and (min-width:768px){
+     .footer{
+        margin-top: 13rem;
+
+        .footer-center{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .text{
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+     }
+ }
+
+ .scroll-up{
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+     i{
+        color: rgb(0, 0, 245);
+       
+     }
+ }
